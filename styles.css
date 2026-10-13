@@ -1,0 +1,1143 @@
+/* Base styles: spacing, colors, and typography. */
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    color: #131313;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased
+}
+
+.wrap {
+    max-width: 1140px;
+    margin-inline: auto
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+button {
+    font: inherit;
+    cursor: pointer
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0
+}
+
+p {
+    color: #868686;
+    line-height: 1.65
+}
+
+h1,
+h2 {
+    letter-spacing: -1.3px;
+    line-height: 1.12
+}
+
+h2 {
+    font-size: 38px
+}
+
+h3 {
+    font-size: 16px
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #8b9aff;
+    outline-offset: 4px
+}
+
+.nav {
+    margin-top: 24px;
+    height: 60px;
+    border: 1px solid #ececec;
+    border-radius: 0 0 19px 19px;
+    box-shadow: 0 4px 8px #00000008;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 19px
+}
+
+.brand {
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    display: flex;
+    align-items: center;
+    gap: 7px
+}
+
+.brandmark {
+    font-size: 29px
+}
+
+.nav nav {
+    display: flex;
+    gap: 28px;
+    font-size: 13px;
+    color: #555
+}
+
+.nav-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center
+}
+
+.nav-actions>button {
+    background: none;
+    border: 0;
+    color: #666;
+    font-size: 13px
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    padding: 11px 16px;
+    background: #fff;
+    color: #484848;
+    font-size: 13px;
+    white-space: nowrap
+}
+
+.button:hover {
+    background: #f1f1f1
+}
+
+.dark {
+    background: #111;
+    color: #fff;
+    border-color: #111
+}
+
+.dark:hover {
+    background: #333
+}
+
+.menu {
+    display: none
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.08fr 1fr;
+    align-items: center;
+    padding: 98px 0 85px;
+    gap: 35px
+}
+
+.eyebrow {
+    font-size: 11px;
+    color: #777;
+    background: #f8f8f8;
+    padding: 6px 9px;
+    border: 1px solid #eee;
+    border-radius: 5px
+}
+
+.eyebrow b {
+    font-size: 9px;
+    color: #555;
+    margin-right: 7px
+}
+
+h1 {
+    font-size: 50px;
+    margin: 24px 0 15px;
+    font-weight: 600
+}
+
+.hero-copy>p {
+    max-width: 510px;
+    font-size: 15px;
+    line-height: 1.55
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 23px
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 32px;
+    font-size: 12px;
+    color: #a4a4a4
+}
+
+.avatars {
+    display: flex
+}
+
+.avatars span {
+    font-size: 15px;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: #eaf1e9;
+    border: 2px solid #fff;
+    margin-left: -4px;
+    overflow: hidden
+}
+
+.integrations {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 68px);
+    gap: 8px;
+    position: relative;
+    mask-image: radial-gradient(ellipse, black 40%, transparent 73%)
+}
+
+.app {
+    display: grid;
+    place-items: center;
+    border: 1px solid #f8f8f8;
+    border-radius: 17px;
+    background: linear-gradient(130deg, #fafafa, #f6f6f6);
+    font-size: 32px;
+    color: var(--app);
+    font-weight: 700
+}
+
+.app.center {
+    background: #090909;
+    color: white;
+    font-size: 45px;
+    box-shadow: 0 12px 25px #0002
+}
+
+.app.empty {
+    color: transparent
+}
+
+.trusted {
+    text-align: center;
+    padding: 40px 0 70px
+}
+
+.trusted>p {
+    font-size: 13px;
+    color: #a8a8a8;
+    margin-bottom: 28px
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: #727578;
+    font-size: 20px;
+    letter-spacing: -.7px
+}
+
+.logos b {
+    font-size: 18px
+}
+
+.section-title {
+    text-align: center
+}
+
+.section-title>p {
+    margin-top: 18px;
+    font-size: 14px
+}
+
+.benefits {
+    padding: 82px 0 80px
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 46px;
+    margin-top: 68px
+}
+
+.symbol {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+    font-size: 20px;
+    margin-bottom: 22px
+}
+
+.blue {
+    color: #7d91e8;
+    background: #f0f3ff
+}
+
+.green {
+    color: #53a981;
+    background: #ecf9f1
+}
+
+.purple {
+    color: #b277df;
+    background: #f7efff
+}
+
+.pink {
+    color: #dd7c9d;
+    background: #fff0f5
+}
+
+.benefit-grid h3 {
+    margin-bottom: 7px
+}
+
+.benefit-grid p {
+    font-size: 14px
+}
+
+.features {
+    padding: 70px 0 90px
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 38px
+}
+
+.feature {
+    background: #f8f8f8;
+    border-radius: 12px;
+    padding: 24px 25px 0;
+    overflow: hidden;
+    height: 280px
+}
+
+.feature-heading {
+    display: flex;
+    gap: 14px;
+    align-items: center
+}
+
+.feature-heading .symbol {
+    flex-shrink: 0;
+    margin: 0;
+    width: 36px;
+    height: 36px;
+    background: white;
+    box-shadow: 0 3px 7px #00000005
+}
+
+.feature-heading h3 {
+    font-size: 15px;
+    margin-bottom: 4px
+}
+
+.feature-heading p {
+    font-size: 12px
+}
+
+.emails {
+    width: 72%;
+    margin: 35px auto 0;
+    display: grid;
+    gap: 8px
+}
+
+.emails>div {
+    background: white;
+    border: 1px solid #eee;
+    box-shadow: 0 5px 15px #00000004;
+    border-radius: 7px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.emails b:not(.gmail) {
+    font-size: 11px
+}
+
+.emails small {
+    display: block;
+    font-size: 8px;
+    color: #aaa;
+    margin-top: 4px
+}
+
+.emails>div>span {
+    margin-left: auto;
+    color: #aaa
+}
+
+.gmail {
+    font-size: 20px;
+    background: linear-gradient(90deg, #4285f4, #e94235, #fabb05, #34a853);
+    background-clip: text;
+    color: transparent
+}
+
+.feedback-cards {
+    width: 72%;
+    margin: 30px auto;
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 14px;
+    border-radius: 9px;
+    box-shadow: 0 9px 25px #00000006
+}
+
+.feedback-cards>div {
+    display: flex;
+    gap: 10px;
+    padding: 8px 0
+}
+
+.feedback-cards p {
+    font-size: 10px;
+    line-height: 1.5
+}
+
+.feedback-cards small {
+    display: block;
+    font-size: 9px
+}
+
+.feedback-cards em {
+    display: block;
+    color: #a5a5a5;
+    font-size: 8px;
+    font-style: normal;
+    margin-top: 5px
+}
+
+.feedback-cards .button {
+    display: flex;
+    margin: 5px auto;
+    padding: 7px 12px;
+    font-size: 9px
+}
+
+.papers {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 50px auto 0;
+    gap: 0
+}
+
+.papers>span {
+    height: 135px;
+    width: 92px;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    color: #d6d6d6;
+    text-align: center;
+    padding: 20px;
+    font-size: 23px;
+    box-shadow: 0 8px 20px #00000007;
+    transform: rotate(-13deg)
+}
+
+.papers>span:nth-child(2) {
+    transform: rotate(0);
+    margin-top: -12px;
+    z-index: 1
+}
+
+.papers>span:nth-child(3) {
+    transform: rotate(13deg)
+}
+
+.papers>b {
+    position: absolute;
+    bottom: -5px;
+    background: #2eb975;
+    border: 4px solid #eef9f3;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 14px;
+    z-index: 2
+}
+
+.activity {
+    width: 77%;
+    margin: 40px auto
+}
+
+.activity p {
+    background: #fff;
+    padding: 11px 12px;
+    margin: 7px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    font-size: 9px
+}
+
+.activity a {
+    color: #8b98e3
+}
+
+.activity small {
+    display: block;
+    font-size: 8px;
+    margin-left: 24px
+}
+
+.dashboard-section {
+    padding: 40px 0 70px
+}
+
+.tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+    gap: 20px
+}
+
+.tabs button {
+    position: relative;
+    text-align: left;
+    border: 0;
+    border-top: 2px solid transparent;
+    background: white;
+    padding: 16px 0 13px 43px
+}
+
+.tabs button.active {
+    border-color: #8e9fef
+}
+
+.tabs .symbol {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    font-size: 15px
+}
+
+.tabs b {
+    display: block;
+    font-size: 12px
+}
+
+.tabs small {
+    font-size: 10px;
+    color: #aaa
+}
+
+.dashboard {
+    background: #f8f8f8;
+    border-radius: 12px;
+    padding: 34px 30px 0;
+    display: grid;
+    grid-template-columns: 155px 1fr;
+    height: 375px;
+    overflow: hidden;
+    margin-top: 12px
+}
+
+.dashboard aside {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 9px 0 0 0;
+    padding: 20px 12px;
+    font-size: 10px
+}
+
+.dashboard aside>b {
+    display: block;
+    margin-bottom: 20px
+}
+
+.dashboard aside p {
+    font-size: 9px;
+    padding: 8px;
+    border-radius: 5px
+}
+
+.dashboard aside small {
+    font-size: 7px;
+    color: #b5b5b5;
+    display: block;
+    margin: 20px 8px 8px
+}
+
+.dashboard .selected {
+    background: #111;
+    color: white
+}
+
+.dashboard-main {
+    background: white;
+    border: 1px solid #eee;
+    min-width: 0;
+    padding: 20px
+}
+
+.dashboard-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px
+}
+
+.dashboard-top span {
+    font-size: 9px;
+    color: #aaa
+}
+
+.board-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 24px 0 16px
+}
+
+.board-top h3 {
+    font-size: 12px
+}
+
+.board-top p {
+    font-size: 8px;
+    margin-top: 5px
+}
+
+.board-top .button {
+    padding: 6px 9px;
+    font-size: 8px
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px
+}
+
+.column {
+    background: #fafafa;
+    padding: 9px;
+    border-radius: 5px
+}
+
+.column h4 {
+    font-size: 9px;
+    margin: 0 0 12px;
+    color: #555
+}
+
+.task {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-size: 8px
+}
+
+.task b {
+    font-size: 8px;
+    display: block;
+    margin-bottom: 5px
+}
+
+.task p {
+    font-size: 7px
+}
+
+.task em {
+    display: block;
+    color: #6dad96;
+    margin-top: 10px;
+    font-size: 6px;
+    font-style: normal
+}
+
+.checks {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 21px;
+    color: #94b5a5;
+    font-size: 10px
+}
+
+.getting-started {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    padding: 80px 0 100px;
+    gap: 80px
+}
+
+.getting-started h2 {
+    font-size: 35px
+}
+
+.getting-started>div>p {
+    font-size: 13px;
+    margin-top: 18px
+}
+
+.steps article {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 32px
+}
+
+.steps .symbol {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+    flex-shrink: 0;
+    margin: 0
+}
+
+.steps article>div {
+    width: 100%
+}
+
+.steps h3 {
+    font-size: 13px;
+    margin-bottom: 10px
+}
+
+.steps p {
+    font-size: 11px
+}
+
+.steps em {
+    float: right;
+    background: #eff9f3;
+    border: 1px solid #dceee3;
+    color: #86b69b;
+    border-radius: 20px;
+    padding: 2px 7px;
+    font-size: 8px;
+    font-style: normal
+}
+
+.testimonials {
+    padding: 55px 0 60px
+}
+
+.testimonials h2 {
+    font-size: 34px
+}
+
+.quotes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 55px
+}
+
+.quotes article>span {
+    color: #66b88f;
+    letter-spacing: 3px;
+    font-size: 12px
+}
+
+.quotes small {
+    color: #aaa;
+    font-size: 9px;
+    margin-left: 9px
+}
+
+.quotes p {
+    color: #555;
+    font-size: 13px;
+    margin: 15px 0 22px
+}
+
+.quotes b {
+    font-size: 11px
+}
+
+.dots {
+    text-align: center;
+    color: #aaa;
+    font-size: 9px;
+    margin-top: 30px
+}
+
+footer {
+    border-top: 1px solid #eee;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 25px
+}
+
+footer .brand {
+    font-size: 18px;
+    white-space: nowrap
+}
+
+footer p {
+    font-size: 10px;
+    max-width: 560px
+}
+
+footer>a:last-child {
+    font-size: 11px;
+    margin-left: auto
+}
+
+dialog {
+    border: 1px solid #eee;
+    box-shadow: 0 15px 80px #0003;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 440px
+}
+
+dialog::backdrop {
+    background: #0005
+}
+
+dialog h2 {
+    font-size: 28px
+}
+
+dialog p {
+    margin: 20px 0
+}
+
+dialog .symbol {
+    margin-bottom: 15px
+}
+
+.dialog-close {
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    background: none;
+    border: 0;
+    font-size: 24px
+}
+
+/* Tablet and smaller desktop screens. */
+@media(max-width:1200px) {
+    .wrap {
+        margin-inline: 6%
+    }
+
+    h1 {
+        font-size: 43px
+    }
+
+    .integrations {
+        grid-template-rows: repeat(5, 55px);
+        gap: 6px
+    }
+
+    .app {
+        font-size: 27px
+    }
+
+    .logos {
+        font-size: 16px;
+        gap: 12px
+    }
+
+    .logos b {
+        font-size: 15px
+    }
+}
+
+/* Mobile layout. */
+@media(max-width:800px) {
+    .nav {
+        position: relative
+    }
+
+    .nav nav {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 22px;
+        border: 1px solid #eee;
+        box-shadow: 0 8px 20px #0001;
+        z-index: 5
+    }
+
+    .nav nav.open {
+        display: flex;
+        flex-direction: column
+    }
+
+    .menu {
+        display: block;
+        margin-left: auto;
+        background: none;
+        border: 0;
+        font-size: 21px;
+        margin-right: 15px
+    }
+
+    .nav-actions>button {
+        display: none
+    }
+
+    .brand {
+        font-size: 20px
+    }
+
+    .hero {
+        padding: 65px 0 35px;
+        grid-template-columns: 1fr;
+        gap: 35px
+    }
+
+    .hero h1 {
+        font-size: 43px
+    }
+
+    .hero-copy>p {
+        max-width: 500px
+    }
+
+    .integrations {
+        max-width: 490px;
+        width: 100%;
+        margin: auto;
+        grid-template-rows: repeat(5, 55px)
+    }
+
+    .trusted {
+        padding: 15px 0 40px
+    }
+
+    .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px
+    }
+
+    .benefits,
+    .features {
+        padding: 45px 0
+    }
+
+    .section-title h2 {
+        font-size: 32px
+    }
+
+    .section-title p br,
+    .getting-started p br {
+        display: none
+    }
+
+    .benefit-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+        margin-top: 40px
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr
+    }
+
+    .feature {
+        height: 280px
+    }
+
+    .dashboard-section {
+        padding: 40px 0
+    }
+
+    .tabs {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px
+    }
+
+    .dashboard {
+        padding: 15px 15px 0;
+        grid-template-columns: 95px 1fr;
+        height: 330px
+    }
+
+    .dashboard aside {
+        padding: 12px 4px
+    }
+
+    .dashboard-main {
+        padding: 12px;
+        overflow: auto
+    }
+
+    .dashboard-top,
+    .board-top,
+    .board {
+        min-width: 480px
+    }
+
+    .checks {
+        gap: 12px;
+        flex-wrap: wrap;
+        text-align: center
+    }
+
+    .getting-started {
+        grid-template-columns: 1fr;
+        padding: 55px 0;
+        gap: 40px
+    }
+
+    .getting-started h2 {
+        font-size: 32px
+    }
+
+    .quotes {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        margin-top: 35px
+    }
+
+    .testimonials {
+        padding: 40px 0
+    }
+
+    .quotes article {
+        max-width: 500px
+    }
+
+    .testimonials h2 {
+        font-size: 32px
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px
+    }
+
+    footer>a:last-child {
+        margin-left: 0
+    }
+}
+
+@media(max-width:420px) {
+    .hero h1 {
+        font-size: 35px
+    }
+
+    .rating {
+        font-size: 10px;
+        gap: 8px
+    }
+
+    .integrations {
+        grid-template-rows: repeat(5, 43px);
+        gap: 5px
+    }
+
+    .app {
+        font-size: 23px;
+        border-radius: 10px
+    }
+
+    .app.center {
+        font-size: 34px
+    }
+
+    .nav .button {
+        font-size: 11px;
+        padding: 9px 11px
+    }
+
+    .benefit-grid {
+        gap: 25px
+    }
+
+    .benefit-grid h3 {
+        font-size: 14px
+    }
+
+    .benefit-grid p {
+        font-size: 12px
+    }
+
+    .emails,
+    .feedback-cards {
+        width: 95%
+    }
+
+    .activity {
+        width: 95%
+    }
+
+    .section-title h2 {
+        font-size: 29px
+    }
+
+    .dashboard {
+        grid-template-columns: 70px 1fr
+    }
+
+    .dashboard aside p {
+        font-size: 7px;
+        padding: 7px 3px
+    }
+
+    .dashboard aside>b {
+        font-size: 8px
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    html {
+        scroll-behavior: auto
+    }
+}
+
+
+/* All image files are included in the images folder. */
+.app img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.person-image {
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.avatars .person-image {
+    width: 100%;
+    height: 100%;
+}
